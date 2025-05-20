@@ -1,64 +1,79 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #333;
+  box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f2937; /* Charcoal */
+  color: #f9fafb; /* Off-White */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
 header {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
   text-align: center;
-}
-
-.contact-info a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
+  background-color: #111827; /* Dark Gray */
+  padding: 30px 20px;
+  border-radius: 12px;
   margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f3f3f3;
+header h1 {
+  font-size: 2.5em;
+  color: #10b981; /* Emerald Green */
+  margin-bottom: 10px;
 }
 
-button {
-  margin: 10px;
+header p, header a {
+  font-size: 1em;
+  color: #f9fafb;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Download Button */
+a.download-btn {
+  display: inline-block;
   padding: 10px 20px;
-  border: none;
-  background-color: #007acc;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-top: 15px;
+  background-color: #10b981; /* Emerald Green */
+  color: #111827; /* Dark Gray */
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #005fa3;
+a.download-btn:hover {
+  background-color: #0e9e6e;
 }
 
-/* Dark mode */
-.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+/* Section Styling */
+section {
+  background-color: #111827; /* Dark Gray */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.dark-mode header, .dark-mode footer {
-  background-color: #1a1a1a;
+/* Image Styling */
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-/* Highlight active section (optional scroll effect) */
-.active-section {
-  background-color: #eef7ff;
-  transition: background-color 0.3s ease-in-out;
+/* Links */
+a:hover {
+  text-decoration: underline;
+  color: #10b981;
 }
