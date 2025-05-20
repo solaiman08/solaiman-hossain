@@ -27,14 +27,14 @@ header {
 header h1 {
   font-size: 2.5em;
   color: #10b981; /* Emerald Green */
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 header p, header a {
   font-size: 1em;
   color: #f9fafb;
   text-decoration: none;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* Download Button */
@@ -65,7 +65,7 @@ section {
 
 /* Image Styling */
 img {
-  max-width: 1000px;
+  max-width: 800px;
   border-radius: 50%;
   margin: 15px auto;
   display: block;
