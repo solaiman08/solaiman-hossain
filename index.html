@@ -4,46 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Solaiman Hossain - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
+      margin: 30px;
       padding: 0;
       background-color: #ffe6f0; /* Light pink background */
-      color: #00cc66;
+      color: #333;
+      text-align: left;
     }
 
     header, main, footer {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
     }
 
     header {
       margin-bottom: 20px;
     }
 
-    .profile-pic-container {
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .profile-pic-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .profile-pic {
+      width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     h1 {
       font-size: 32px;
       margin-bottom: 5px;
       text-align: center;
-      color: #00cc66;
     }
 
-    p, ul, li, h2, h3 {
-      color: #00cc66;
+    p, ul, li, h2 {
+      color: white; /* Text color set to white */
     }
 
     section {
@@ -52,7 +49,7 @@
 
     .contact-info p {
       margin: 4px 0;
-      color: #00cc66;
+      color: white;
     }
 
     a.download-btn {
@@ -63,14 +60,6 @@
       border-radius: 8px;
       text-decoration: none;
       margin-top: 10px;
-    }
-
-    a {
-      color: #00cc66;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     footer {
@@ -88,17 +77,15 @@
       cursor: pointer;
     }
 
-    ul {
-      list-style-type: square;
+    a {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
 
-  <!-- Fullscreen Profile Picture -->
-  <div class="profile-pic-container">
-    <img src="solaiman.jpeg" alt="Solaiman Hossain" />
-  </div>
+  <!-- Profile Picture -->
+  <img src="solaiman.jpeg" alt="Solaiman Hossain" class="profile-pic">
 
   <header>
     <h1>Solaiman Hossain</h1>
@@ -118,48 +105,49 @@
   <main>
     <section>
       <h2>Summary</h2>
-      <p>IT & Cybersecurity Specialist with a BSc in Electrical and Electronics Engineering and strong hands-on experience in networking, ethical hacking, and system administration. Skilled in LAN/WAN setup, vulnerability assessment, and industrial control systems, including SCADA. Proven ability to manage electronics maintenance, PLC automation, and technical support. Passionate about securing digital infrastructure and solving real-world problems through innovative technology solutions.</p>
+      <p>IT & Cybersecurity Specialist with a BSc in Electrical and Electronics Engineering and strong hands-on experience in networking, ethical hacking, and system administration. Skilled in LAN/WAN setup, vulnerability assessment, and industrial control systems. Proven ability to manage electronics maintenance, PLC automation, and technical support. Passionate about securing digital infrastructure and solving real-world problems through innovative technology solutions.</p>
     </section>
 
-    <section>
-      <h2>Professional Experience</h2>
-      <div class="experience">
-        <h3>Junior R&D Analyst</h3>
-        <p><strong>AHOM Limited, UK (Remote)</strong> | July 2024 – Dec 2024</p>
-        <ul>
-          <li>Research and analyze web/software.</li>
-          <li>Perform data entry, reporting, and daily team meetings.</li>
-          <li>Tools: Discord, Trackbi, Desklog, Figma, Jira, Fathom.</li>
-        </ul>
+<section>
+  <h2>Professional Experience</h2>
+  <div class="experience">
+    <h3>Junior R&D Analyst</h3>
+    <p><strong>AHOM Limited, UK (Remote)</strong> | July 2024 – Dec 2024</p>
+    <ul>
+      <li>Research and analyze web/software.</li>
+      <li>Perform data entry, reporting, and daily team meetings.</li>
+      <li>Tools: Discord, Trackbi, Desklog, Figma, Jira, Fathom.</li>
+    </ul>
 
-        <h3>IT Support Engineer</h3>
-        <p><strong>HAJ Corporation, Dhaka</strong> | Nov 2020 – Mar 2023</p>
-        <ul>
-          <li>Conducted software and web research.</li>
-          <li>Provided hardware/software technical support.</li>
-          <li>Installed and maintained CCTV, QMS, PA, and access control systems.</li>
-          <li>Led power system and UPS setup and maintenance.</li>
-          <li>Designed and deployed custom kiosk machines.</li>
-          <li>Sourced and manufactured LED displays for QMS.</li>
-        </ul>
+    <h3>IT Support Engineer</h3>
+    <p><strong>HAJ Corporation, Dhaka</strong> | Nov 2020 – Mar 2023</p>
+    <ul>
+      <li>Conducted software and web research.</li>
+      <li>Provided hardware/software technical support.</li>
+      <li>Installed and maintained CCTV, QMS, PA, and access control systems.</li>
+      <li>Led power system and UPS setup and maintenance.</li>
+      <li>Designed and deployed custom kiosk machines.</li>
+      <li>Sourced and manufactured LED displays for QMS.</li>
+    </ul>
 
-        <h3>Technical Support (CCTV & Networking)</h3>
-        <p><strong>Bangladesh Army</strong> | Apr 2023 – Dec 2024</p>
-        <ul>
-          <li>Repaired and maintained CCTV and access control systems.</li>
-          <li>Troubleshoot networking hardware and connectivity issues.</li>
-          <li>Coordinated with technical staff for system reliability.</li>
-          <li>Operated under Log Area HQ, Mohakhali.</li>
-        </ul>
+    <h3>Technical Support (CCTV & Networking)</h3>
+    <p><strong>Bangladesh Army</strong> | Apr 2023 – Dec 2024</p>
+    <ul>
+      <li>Repaired and maintained CCTV and access control systems.</li>
+      <li>Troubleshoot networking hardware and connectivity issues.</li>
+      <li>Coordinated with technical staff for system reliability.</li>
+      <li>Operated under Log Area HQ, Mohakhali.</li>
+    </ul>
 
-        <h3>Technical Intern</h3>
-        <p><strong>Tech LAB Bangladesh, Dhaka</strong> | Feb 2020 – Mar 2020</p>
-        <ul>
-          <li>Conducted data entry, analysis, and report preparation.</li>
-          <li>Collaborated with the team on various technical tasks.</li>
-        </ul>
-      </div>
-    </section>
+    <h3>Technical Intern</h3>
+    <p><strong>Tech LAB Bangladesh, Dhaka</strong> | Feb 2020 – Mar 2024</p>
+    <ul>
+      <li>Conducted data entry, analysis, and report preparation.</li>
+      <li>Collaborated with the team on various technical tasks.</li>
+    </ul>
+  </div>
+</section>
+
 
     <section>
       <h2>Education</h2>
@@ -183,9 +171,9 @@
     <section>
       <h2>Technical Skills</h2>
       <ul>
-        <li><strong>Cybersecurity:</strong> SQLi, OSINT, SOC, Burp, Kali Linux</li>
+        <li><strong>Cybersecurity:</strong> SQL injection, OSINT, SOC, Burp, Kali Linux, XSS</li>
         <li><strong>Networking:</strong> CCNA, MTCNA, DHCP, DNS, Firewall, VPN, OSPF</li>
-        <li><strong>Electronics:</strong> CCTV, QMS, PLC, VFD, Electronics Hardware repairing</li>
+        <li><strong>Electronics:</strong> CCTV, QMS, PLC, VFD, PAS, All Electronics Hardware Repairing</li>
         <li><strong>Programming:</strong> Python, C/C++, MATLAB, HTML, CSS, Git</li>
         <li><strong>Tools:</strong> Figma, Jira, Trackbi, SEO, TeamViewer</li>
       </ul>
