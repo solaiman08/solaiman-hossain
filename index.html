@@ -5,15 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Solaiman Hossain - Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: left;
+    }
+
+    header, main, footer {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 0; /* Square shape */
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    p, ul {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 4px 0;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    a {
+      color: #007acc;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header style="text-align: center; padding: 20px;">
-    <!-- Profile Picture -->
-    <img src="solaiman.jpeg" alt="Solaiman Hossain"
-         style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3); margin: 10px 0;">
+  <!-- Profile Picture -->
+  <img src="solaiman.jpeg" alt="Solaiman Hossain">
 
+  <header>
     <h1>Solaiman Hossain</h1>
     <p>IT & Cybersecurity Specialist | Network System Admin | Electronics Engineer</p>
 
@@ -21,32 +95,17 @@
       <p><strong>Mobile:</strong> +8801753616908</p>
       <p><strong>Email:</strong> solaiman.it.bd@gmail.com</p>
       <p><strong>Address:</strong> Mirpur 10, Dhaka-1216, Bangladesh</p>
-      <p><strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/solaiman-hossain-35004b254/" target="_blank">
-          solaiman-hossain
-        </a>
-      </p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/solaiman-hossain-35004b254/" target="_blank">solaiman-hossain</a></p>
     </div>
 
     <!-- CV Download Button -->
-    <a href="solaiman-cv.pdf" download
-       style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white;
-              border-radius: 8px; text-decoration: none; margin-top: 10px;">
-      📄 Download CV
-    </a>
+    <a href="solaiman-cv.pdf" download class="download-btn">📄 Download CV</a>
   </header>
 
-  <!-- Main Content -->
-  <main style="max-width: 900px; margin: 0 auto; padding: 20px; text-align: left;">
+  <main>
     <section>
       <h2>Summary</h2>
-      <p>
-        IT & Cybersecurity Specialist with a BSc in Electrical and Electronics Engineering and strong hands-on experience
-        in networking, ethical hacking, and system administration. Skilled in LAN/WAN setup, vulnerability assessment,
-        and industrial control systems, including SCADA. Proven ability to manage electronics maintenance, PLC automation,
-        and technical support. Passionate about securing digital infrastructure and solving real-world problems through
-        innovative technology solutions.
-      </p>
+      <p>IT & Cybersecurity Specialist with a BSc in Electrical and Electronics Engineering and strong hands-on experience in networking, ethical hacking, and system administration. Skilled in LAN/WAN setup, vulnerability assessment, and industrial control systems, including SCADA. Proven ability to manage electronics maintenance, PLC automation, and technical support. Passionate about securing digital infrastructure and solving real-world problems through innovative technology solutions.</p>
     </section>
 
     <section>
@@ -95,13 +154,20 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer style="text-align: center; padding: 20px;">
+  <footer>
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <button onclick="scrollToTop()">Back to Top</button>
     <p>&copy; 2025 Solaiman Hossain. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
